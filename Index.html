@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset = "UTF-8">
+      <title>Carte interactive</title>
+      <link src="c3-0.4.11/c3.css"></link>
+      <link href="bootstrap.min.css" rel="stylesheet">
+      <link rel="stylesheet" href="style.css">
+      <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    </head>
+    <body>
+
+      <div class="home">
+        <div class="head col-md-3">
+          <div class="container">
+            <img src="image/logo-bge.png"/>
+            <h1>Couveuses-Incubateurs <br/>BGE <br/>PaRIF</h1>
+            <p class="lead">Rapport Annuel d’Activité <br/>2015</p>
+          </div>
+        </div>
+
+        <div class="col-md-9">
+          <div class="img">
+            <img src="image/home2.jpg" class="img-responsive"/>
+          </div>
+        </div>
+      </div>
+
+      <div class="header">
+        <h1 class="titre-antenne" style="text-align:center; color:white;">Antenne</h1>
+      </div>
+
+      <div class="container-fluid">
+        <div class="row">
+
+          <div class="col-md-4">
+            <label for="antenne">Sélectionnez une antenne :</label>
+            <select name="antenne" id="antenne">
+              <option id="" value="Global">Global</option>
+              <option id="paris11" value="paris11">Paris 11</option>
+              <option id="paris14" value="paris14">Paris 14</option>
+              <option id="paris18" value="paris18">Paris 18</option>
+              <option id="courtaboeuf" value="courtaboeuf">Courtaboeuf</option>
+              <option id="evry-corbeil" value="evry-corbeil">Evry-Corbeil</option>
+              <option id="grigny" value="grigny">Grigny</option>
+              <option id="boucleNord" value="boucleNord">Boucle Nord</option>
+              <option id="boucleSud" value="boucleSud">Boucle Sud</option>
+              <option id="saintDenis" value="saintDenis">Saint-Denis</option>
+              <option id="bagnoletMontreuilNoisyleSec" value="bagnoletMontreuilNoisyleSec">Bagnolet/Montreuil/Noisy-Le-Sec</option>
+              <option id="idees" value="IDEES">Antenne [IDEES]</option>
+              <option id="siae" value="SIAE">Antenne [SIAE]</option>
+              <option id="sap" value="SAP">Antenne [SAP]</option>
+              <option id="innovation" value="Innovation">Antenne Innovation</option>
+              <option id="mdc" value="MDC">Antenne [MDC]</option>
+            </select>
+            <div id="carte">
+              <svg class="container-fluid" version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+     width="595.28px" height="650.39px" viewBox="0 0 595.28 850.39" enable-background="new 0 0 595.28 850.39" xml:space="preserve">
+                <g id="sud92">
+                  <polygon fill="#084D96" stroke="#F6F6F6" stroke-miterlimit="10" points="262.217,324.485 268.424,318.282 271.736,312.889 
+                    267.724,309.44 252.408,304.343 248.007,302.826 238.9,299.52 234.763,297.997 226.766,294.416 222.359,291.789 208.003,293.996 
+                    198.627,284.758 198.356,285.033 198.353,285.04 192.968,283.8 182.908,264.762 157.381,253.447 159.457,243.655 167.039,227.376 
+                    167.764,225.707 167.039,227.391 171.041,225.181 180.844,216.343 191.044,219.248 196.416,210.283 217.376,213.181 
+                    222.072,201.594 222.073,201.597 238.752,191.385 242.914,188.476 239.317,185.462 225.524,173.042 221.807,175.095 208.295,167.25 
+                    202.897,168.059 202.341,172.348 194.64,168.61 194.64,168.61 193.938,156.63 168.425,166.408 163.309,168.476 163.038,163.249 
+                    154.632,145.024 150.784,149.181 133.542,163.661 128.991,166.557 105.391,179.111 100.019,184.346 100.014,184.343 97.658,188.476 
+                    87.879,208.91 85.254,213.982 79.608,223.793 82.628,226.96 82.91,234.683 79.608,244.2 87.177,257.031 88.983,261.859 
+                    78.505,263.388 74.222,273.59 74.222,279.249 76.001,288.064 76.97,292.477 79.178,302.147 78.761,307.096 78.761,307.79 
+                    85.94,314.822 90.06,317.993 102.348,313.992 106.627,316.062 115.333,338.549 113.121,343.107 133.812,341.578 133.814,341.576 
+                    141.109,349.585 140.572,360.206 156.277,364.072 158.911,368.882 158.891,368.893 161.382,379.649 165.652,388.896 
+                    165.249,393.996 188.98,402.824 199.597,402.271 206.627,407.927 211.583,409.584 218.208,428.067 214.357,431.515 210.911,435.526 
+                    213.928,445.443 238.9,437.978 239.734,448.469 240.973,453.71 253.934,446.831 258.617,422.139 249.513,417.722 249.109,407.511 
+                    254.632,393.436 258.348,387.252 258.352,387.253 264.542,369.306 261.123,361.169 257.11,359.378 261.394,343.099 262.903,337.719 
+                    264.009,333.306 257.798,324.074 "/>
+                  <circle fill="#E8433E" stroke="#FFFFFF" stroke-width="0.5" cx="228.077" cy="355.886" r="4.993"/>
+                </g>
+                <g id="paris_18">
+                  <polygon fill="#084D96" stroke="#F6F6F6" stroke-miterlimit="10" points="313.521,176.899 308.837,176.899 294.072,176.899 
+                    275.458,177.187 270.771,177.308 270.771,177.301 265.382,177.713 260.008,177.866 256.008,181.027 242.916,188.473 
+                    238.754,191.382 222.076,201.593 217.391,213.164 221.378,215.111 233.396,220.89 240.559,212.902 262.07,207.229 267.456,205.716 
+                    267.457,205.723 266.892,222.545 265.788,228.067 268.13,227.65 289.238,226.544 291.326,205.723 307.299,204.771 314.494,186.55 
+                    "/>
+                  <circle fill="#E8433E" stroke="#FFFFFF" stroke-width="0.5" cx="297.328" cy="189.684" r="4.994"/>
+                </g>
+                <g id="paris_centre">
+                  <polygon fill="#084D96" stroke="#F6F6F6" stroke-miterlimit="10" points="342.496,257.721 320.283,224.768 310.912,229.306 
+                    306.36,231.926 306.359,231.919 301.118,230.276 296.014,228.765 296.015,228.762 289.252,226.553 268.151,227.657 268.144,227.65 
+                    265.8,228.062 266.905,222.558 267.471,205.715 262.07,207.237 240.559,212.888 233.381,220.89 238.069,233.576 240.01,237.718 
+                    230.768,242.13 227.455,246.144 231.035,249.726 245.937,263.11 255.874,264.766 255.88,264.762 264.28,269.997 268.577,272.066 
+                    276.968,276.341 285.664,253.315 303.18,262.414 306.492,266.138 310.357,258.824 311.598,254.831 316.569,257.181 343.455,263.385 
+                    "/>
+                  <circle fill="#E8433E" stroke="#FFFFFF" stroke-width="0.5" cx="319.488" cy="245.084" r="4.994"/>
+                </g>
+                <g id="paris_19">
+                  <polygon fill="#084D96" stroke="#F6F6F6" stroke-miterlimit="10" points="360.963,251.93 360.289,247.114 358.903,223.098 
+                    356.144,214.409 356.139,214.412 352.827,211.09 345.243,205.85 343.467,196.758 342.752,191.243 333.928,177.713 313.521,176.899 
+                    314.494,186.556 307.299,204.771 291.326,205.723 289.252,226.544 296.002,228.754 301.104,230.271 306.359,231.927 
+                    310.912,229.306 320.283,224.768 320.283,224.76 342.483,257.721 343.455,263.379 356.842,265.17 361.244,265.722 361.799,261.581 
+                                                                                          "/>
+                  <circle fill="#E8433E" stroke="#FFFFFF" stroke-width="0.5" cx="327.798" cy="193.839" r="4.994"/>
+                </g>
+                <g id="paris_14">
+                  <polygon fill="#084D96" stroke="#F6F6F6" stroke-miterlimit="10" points="282.76,278.545 279.729,277.574 276.968,276.336 
+                    268.577,272.073 264.289,269.995 264.292,269.991 255.859,264.766 245.937,263.11 231.035,249.735 227.455,246.136 230.768,242.137 
+                    240.01,237.718 238.078,233.572 233.381,220.896 221.39,215.103 217.391,213.171 196.419,210.274 191.046,219.239 180.837,216.327 
+                    171.043,225.172 167.029,227.374 159.459,243.651 157.384,253.445 182.911,264.75 192.972,283.792 198.359,285.03 198.629,284.762 
+                    208.019,293.994 222.351,291.786 226.782,294.417 234.755,298.008 238.903,299.523 248.011,302.832 252.426,304.352 
+                    267.726,309.437 271.739,312.887 284.563,314.542 284.967,309.316 "/>
+                  <circle fill="#E8433E" stroke="#FFFFFF" stroke-width="0.5" cx="271.013" cy="294.945" r="4.994"/>
+                </g>
+              <g id="bagnolet_montreuil_noisy">
+                <polygon fill="#084D96" stroke="#F6F6F6" stroke-miterlimit="10" points="551.302,314.042 547.017,299.151 542.196,297.232 
+                  541.926,286.887 539.586,281.769 528.819,255.974 538.061,251.577 542.762,242.471 543.165,237.372 537.925,236.808 
+                  522.611,235.852 521.375,236.128 503.023,224.94 487.858,222.47 482.202,222.192 477.382,219.715 472.274,221.647 463.721,219.026 
+                  460.274,216.132 457.93,221.093 446.614,245.085 450.063,251.84 454.615,249.375 461.784,256.824 464.825,260.812 466.902,258.892 
+                  466.908,258.89 469.659,263.162 486.62,270.87 491.578,279.423 522.07,302.194 522.771,312.525 524.416,317.632 547.988,330.184 
+                  551.854,319.145   "/>
+                <polygon fill="#084D96" stroke="#F6F6F6" stroke-miterlimit="10" points="420.403,229.096 416.686,219.425 413.109,215.566 
+                  408.553,215.027 399.308,214.892 396.131,218.61 389.653,225.372 381.935,220.948 380.008,214.596 376.008,215.025 
+                  374.206,209.786 370.485,194.202 368.277,198.616 356.427,206.878 347.589,198.325 343.036,196.809 344.827,205.914 
+                  352.411,211.155 355.725,214.461 358.485,223.164 359.86,247.166 360.548,251.974 361.381,261.632 364.156,261.497 
+                  388.966,256.957 394.084,258.749 401.787,251.98 425.792,244.256 430.749,242.613 429.94,232.82  "/>
+                <path fill="#E8433E" stroke="#FFFFFF" stroke-width="0.5" d="M513.936,276.94c0,2.757,2.237,4.994,4.997,4.994
+                c2.756,0,4.99-2.237,4.99-4.994c0-2.758-2.234-4.994-4.99-4.994C516.173,271.946,513.936,274.182,513.936,276.94z"/>
+              </g>
+              <g id="saint_denis">
+                <polygon fill="#084D96" stroke="#F6F6F6" stroke-miterlimit="10" points="555.019,119.718 550.761,106.052 548.821,101.654 
+                  546.897,96.394 521.805,59.292 532.688,51.581 536.27,41.104 532.145,19.571 527.567,17.504 521.653,0 516.83,0.264 508.145,4 
+                  507.176,9.504 486.471,12.688 463.859,50.484 453.241,53.636 452.138,59.292 448.688,59.993 447.317,63.442 442.196,62.62 
+                  416.146,78.326 408.413,91.572 404.688,90.462 396.835,91.169 393.521,88.958 383.173,90.751 368.952,85.774 363.872,84.26 
+                  356.546,87.3 353.247,89.498 353.244,89.504 348.692,86.744 326.898,64.829 323.451,64.397 320.002,63.583 314.766,62.196 
+                  309.658,59.993 305.105,61.644 296.837,73.51 291.743,71.16 282.91,75.578 274.625,90.058 271.864,86.744 269.37,83.159 
+                  265.385,85.78 253.384,78.884 244.819,77.503 237.947,72.136 233.933,75.712 227.17,83.848 228.008,87.982 230.887,95.701 
+                  227.305,97.236 232.291,97.513 251.47,101.91 256.696,103.303 276.012,112.41 277.117,128.546 268.819,142.602 265.936,146.062 
+                  262.218,148.683 260.549,153.095 256.831,154.886 253.112,156.543 255.726,161.627 259.608,177.919 264.964,177.763 
+                  270.355,177.366 275.042,177.245 293.656,176.957 308.419,176.95 313.105,176.957 333.525,177.772 342.347,191.301 343.036,196.817 
+                  347.589,198.331 356.427,206.884 368.277,198.62 370.485,194.195 374.206,209.793 376.008,215.019 380.024,214.609 381.935,220.954 
+                  389.653,225.364 396.131,218.61 399.308,214.885 408.553,215.027 413.109,215.58 413.114,215.571 416.686,219.432 420.403,229.084 
+                  429.94,232.807 430.749,242.613 446.614,245.085 457.93,221.101 460.274,216.132 463.721,219.014 472.288,221.642 477.382,219.709 
+                  482.219,222.192 487.858,222.47 503.037,224.955 521.375,236.128 522.611,235.865 525.651,215.161 517.788,208.124 513.787,204.543 
+                  505.84,203.253 513.804,204.534 543.451,183.439 542.745,172.82 547.447,169.912 549.387,168.961 545.091,165.789 549.103,140.824 
+                  553.105,139.169 559.987,133.914 560.139,128.405 "/>
+                <circle fill="#E8433E" stroke="#FFFFFF" stroke-width="0.5" cx="284.863" cy="157.829" r="4.994"/>
+                </g>
+                <g id="nord92">
+                  <polygon fill="#084D96" stroke="#F6F6F6" stroke-miterlimit="10" points="277.529,128.49 276.426,112.349 257.11,103.247 
+                    251.882,101.858 251.884,101.855 232.706,97.458 227.718,97.182 206.627,103.524 188.429,116.073 183.746,119.098 183.727,119.098 
+                    179.607,122.976 165.922,133.32 162.206,137.18 154.632,145.034 163.038,163.249 163.309,168.476 168.425,166.408 193.938,156.63 
+                    194.64,168.623 202.354,172.359 202.897,168.062 208.284,167.237 221.792,175.095 225.521,173.043 239.305,185.448 242.901,188.486 
+                    256.005,181.034 260.022,177.864 256.14,161.586 253.525,156.488 257.245,154.837 260.962,153.04 262.631,148.627 266.348,146.008 
+                    269.233,142.56 "/>
+                  <circle fill="#E8433E" stroke="#FFFFFF" stroke-width="0.5" cx="241.927" cy="120.433" r="4.993"/>
+                </g>
+                <g id="valdemarne">
+                  <polygon fill="#084D96" stroke="#F6F6F6" stroke-miterlimit="10" points="553.614,405.547 571.963,404.739 563.139,385.154 
+                    542.583,382.81 544.377,371.9 552.916,357.843 555.259,352.74 552.916,347.763 547.558,346.241 549.194,341.547 552.916,332.333 
+                    548.364,330.109 524.792,317.558 523.146,312.46 522.446,302.114 491.951,279.343 486.982,270.796 470.024,263.087 467.262,258.797 
+                    465.201,260.731 462.171,256.744 454.989,249.295 450.437,251.766 446.987,244.996 431.123,242.525 426.167,244.182 
+                    402.162,251.908 394.448,258.662 389.341,256.885 364.518,261.425 364.518,261.426 361.756,261.559 361.191,265.7 361.756,285.008 
+                    347.543,293.832 337.752,296.315 333.471,298.936 333.487,298.948 310.869,312.184 306.18,314.535 301.478,315.208 296.793,314.797 
+                    296.789,314.8 293.627,310.803 284.521,314.527 271.685,312.857 268.386,318.251 262.163,324.461 257.759,324.042 263.969,333.282 
+                    262.864,337.688 261.354,343.075 257.059,359.354 261.076,361.145 264.521,369.284 264.506,369.288 258.313,387.215 
+                    254.601,393.412 254.593,393.41 249.072,407.487 249.49,417.697 258.579,422.114 266.581,420.459 269.483,423.617 269.475,423.624 
+                    279.972,435.34 290.314,436.039 294.584,439.06 305.749,427.893 310.99,427.371 311.42,451.749 311.42,456.579 311.41,456.583 
+                    311.41,460.72 311.692,468.987 328.499,469.281 354.59,459.895 358.58,468.316 358.037,473.136 375.427,464.029 380.232,463.222 
+                    385.328,461.557 388.104,468.042 392.386,476.449 397.075,477.419 396.507,467.479 415.419,458.804 420.66,457.836 420.66,457.822 
+                    423.26,457.822 428.239,457.43 432.928,455.628 455.408,446.655 460.245,446.655 465.874,455.761 468.512,477.015 469.889,482.105 
+                    477.055,488.721 480.233,492.45 478.991,495.618 482.305,503.08 491.951,504.318 496.369,505.272 500.641,514.919 501.341,520.321 
+                    520.371,516.023 525.476,515.769 526.166,511.066 530.448,509.154 528.376,501.258 525.476,498.645 522.581,491.211 
+                    521.887,488.466 524.922,484.019 535.001,465.97 550.301,451.896 549.763,446.388 543,432.056 555.689,421.427 "/>
+                </g>
+                <g id="evry_corbeil">
+                  <polygon fill="#084D96" stroke="#F6F6F6" stroke-miterlimit="10" points="476.248,639.925 475.313,629.578 466.066,616.604 
+                    470.057,613.291 491.311,609.561 499.851,583.795 496.131,580.481 484.815,571.496 481.236,568.047 471.582,570 468.133,566.405 
+                    465.371,562.675 453.38,547.927 450.198,544.06 447.022,540.045 441.65,533.565 436.676,535.225 414.616,549.314 410.619,545.971 
+                    405.646,548.465 373.37,576.736 369.221,573.153 349.788,554.27 346.204,558.392 332.826,593.154 324.132,614.396 320.004,617.305 
+                    312.008,629.294 298.211,633.306 299.318,654.806 300.423,660.194 299.035,665.702 277.794,672.451 275.18,677.288 276.958,693.167 
+                    272.969,702.395 281.375,726.813 284.956,730.801 279.568,738.115 292.417,759.493 294.762,764.043 297.646,767.354 
+                    310.604,765.418 301.526,779.344 303.168,801.423 304.273,806.824 340.277,817.169 345.505,818.11 345.923,820.456 356.266,816.882 
+                    366.338,820.872 380.136,829.829 387.984,847.634 393.24,849.303 414.179,850.261 413.239,834.544 419.868,830.395 424.825,832.066 
+                    439.992,838.802 454.604,830.679 459.993,831.914 462.068,809.138 456.964,809.005 454.604,799.08 444.815,796.734 457.65,755.906 
+                    446.89,755.357 467.037,725.168 468.82,714.529 481.653,706.124 476.416,706.395 471.16,706.682 471.447,701.006 467.578,690.543 
+                    490.071,673.839 492.414,668.734 493.65,649.58 490.607,645.298 "/>
+                  <circle fill="#E8433E" stroke="#FFFFFF" stroke-width="0.5" cx="311.178" cy="688.29" r="4.994"/>
+                </g>
+                <g id="grigny">
+                  <polygon fill="#084D96" stroke="#F6F6F6" stroke-miterlimit="10" points="534.749,519.922 525.498,515.773 520.404,516.058 
+                    501.357,520.326 500.684,514.951 496.401,505.293 491.984,504.324 482.338,503.084 479.023,495.623 480.266,492.471 
+                    477.087,488.754 469.919,482.126 468.544,477.034 465.937,455.793 460.274,446.675 455.44,446.675 432.961,455.647 428.271,457.422 
+                    423.304,457.855 420.673,457.855 415.45,458.811 396.536,467.498 397.104,477.438 392.415,476.469 388.133,468.052 385.359,461.571 
+                    380.264,463.242 375.444,464.049 358.057,473.154 358.611,468.337 354.623,459.913 328.546,469.301 311.707,469.021 
+                    311.441,460.738 311.441,456.614 311.441,451.779 311.033,427.361 305.781,427.927 294.612,439.089 291.449,443.093 
+                    294.612,439.078 290.348,436.06 280.002,435.36 269.506,423.643 266.626,420.463 258.61,422.134 253.938,446.826 240.967,453.72 
+                    239.446,464.049 238.192,469.155 236.135,473.72 229.787,481.292 230.353,488.741 229.522,492.605 239.187,497.16 248.266,516.461 
+                    253.086,513.981 262.476,517.429 265.92,521.159 264.002,522.805 275.164,539.776 275.717,549.017 278.199,553.434 280.274,553.434 
+                    275.987,575.635 274.613,581.153 270.197,577.841 255.164,561.839 255.583,556.344 251.997,560.87 245.521,570.136 241.79,573.853 
+                    234.202,581.153 232.968,590.392 233.232,595.366 227.172,619.65 260.686,630.127 265.803,630.692 267.446,629.562 267.447,629.595 
+                    288.272,629.835 293.375,631.236 298.2,633.306 311.991,629.294 319.991,617.305 324.132,614.396 332.815,593.167 332.826,593.17 
+                    346.188,558.392 349.788,554.27 369.221,573.153 373.385,576.736 405.654,548.465 410.619,545.971 414.616,549.284 436.676,535.225 
+                    441.642,533.567 441.65,533.578 447.022,540.045 450.198,544.06 453.366,547.912 465.371,562.675 468.133,566.392 471.582,569.978 
+                    481.236,568.063 484.815,571.485 496.672,552.195 499.444,548.047 509.659,546.536 518.343,552.195 533.361,539.225 
+                    538.614,539.776 539.153,534.683"/>
+                  <circle fill="#E8433E" stroke="#FFFFFF" stroke-width="0.5" cx="311.178" cy="577.488" r="4.994"/>
+                </g>
+                <g id="courtaboeuf">
+                  <polygon fill="#084D96" stroke="#F6F6F6" stroke-miterlimit="10" points="278.199,553.434 275.717,549.017 275.164,539.776 
+                    264.002,522.805 265.92,521.148 262.476,517.441 253.086,513.968 248.266,516.461 239.16,497.16 229.522,492.605 230.353,488.754 
+                    229.787,481.292 236.135,473.706 238.205,469.155 239.446,464.049 240.967,453.705 239.726,448.464 238.895,437.985 
+                    213.921,445.438 210.903,435.508 214.352,431.51 218.201,428.061 211.576,409.581 206.619,407.921 199.588,402.266 188.961,402.818 
+                    165.243,393.996 165.646,388.89 161.376,379.65 159.854,384.877 138.342,386.683 131.594,379.375 120.82,378.958 116.834,382.824 
+                    121.923,392.063 119.043,413.715 114.073,411.236 104.278,406.682 89.786,414.819 78.634,414.268 65.244,424.061 65.111,429.705 
+                    60.83,439.348 55.87,438.821 47.87,432.883 28.555,437.569 24.135,441.017 34.765,460.064 31.45,470.677 34.21,475.648 
+                    31.45,480.189 20,497.844 20.554,508.324 36.555,512.327 26.644,525.982 26.343,537.014 31.599,539.225 41.795,534.817 
+                    46.065,531.221 46.618,525.85 61.662,522.268 67.036,521.86 76.143,525.163 83.042,537.85 87.873,538.805 91.456,539.776 
+                    79.995,555.348 81.245,564.881 85.934,565.984 104.413,570.404 91.59,581.423 97.651,597.171 108.968,609.295 115.178,600.601 
+                    127.313,610.815 130.491,615.084 131.46,615.23 135.045,611.354 150.615,613.442 155.572,615.084 154.194,625.296 163.599,637.03 
+                    166.899,641.013 185.229,638.402 189.663,639.909 199.723,624.041 209.381,626.254 213.247,629.7 216.563,633.714 226.07,629.981 
+                    227.172,619.65 233.232,595.351 232.968,590.392 234.202,581.153 241.79,573.853 245.521,570.136 251.997,560.87 255.583,556.344 
+                    255.189,561.855 270.197,577.855 274.613,581.153 275.987,575.646 280.274,553.434 "/>
+                  <circle fill="#E8433E" stroke="#FFFFFF" stroke-width="0.5" cx="241.927" cy="535.938" r="4.993"/>
+                </g>
+                <g id="paris_13">
+                  <polygon fill="#084D96" stroke="#F6F6F6" stroke-miterlimit="10" points="361.244,265.722 356.842,265.17 343.455,263.379 
+                    316.569,257.167 311.586,254.825 310.346,258.824 306.492,266.132 303.18,262.409 285.665,253.323 276.968,276.341 279.729,277.583 
+                    282.76,278.545 284.967,309.311 284.563,314.548 293.67,310.824 296.834,314.824 301.52,315.235 306.221,314.548 310.912,312.206 
+                    333.522,298.963 337.795,296.337 347.602,293.859 361.799,285.03 "/>
+                  <circle fill="#E8433E" stroke="#FFFFFF" stroke-width="0.5" cx="298.713" cy="294.945" r="4.994"/>
+                </g>
+              </svg>
+            </div>
+            <div id="AntenneSpé">
+              <h2>Les antennes spécialisées :</h2>
+              <ul class="menuAntenne">
+                <!--<li>Globale</li>
+                <li>Paris 11</li>
+                <li>Paris 14</li>
+                <li>Paris 18</li>
+                <li>Courtaboeuf</li>
+                <li>Evry-Corbeil</li>
+                <li>Grigny</li>
+                <li>Boucle Nord</li>
+                <li>Boucle Sud</li>
+                <li>Saint-denis</li>
+                <li>bagnolet</li>-->
+                <li><a href="#">Antenne IDEES</a></li>
+                <li><a href="#">Antenne SIAE</a></li>
+                <li><a href="#">Antenne SAP</a></li>
+                <li><a href="#">Antenne Innovation</a></li>
+                <li><a href="#">Antenne MDC</a></li>
+              </ul>
+              <!--<div class="antenneFonction"></div>-->
+            </div>
+
+          </div>
+          <div style="color:#074d97;" class="col-md-8">
+
+            <div class="row cadre">
+              <h2 style="text-align:center;" id="DonneesSociales">Qui sont nos couvés et incubés ?</h2>
+              <!--<div class="col-md-3 col-sm-3" id="chart"></div>
+              <div class="col-md-3 col-sm-3" id="chart2"></div>
+              <div class="col-md-3 col-sm-3" id="chart3"></div>
+              <div class="col-md-3 col-sm-3" id="chart4"></div>-->
+              <!--<div class="col-md-4 col-sm-4">
+                <div id="chart"></div>
+                <div id="chart2"></div>
+              </div>
+              <div class="col-md-4 col-sm-4">
+                <div id="chart3"></div>
+                <div id="chart4"></div>
+              </div>
+              <div class="col-md-4 col-sm-4">
+                <p>En 1994, la Boutique de gestion de Paris Ile-de-France met en place le pôle "Créer son Activité" à la Cité des Sciences de la Villette : plus de 4 000 visiteurs s'y rendent chauqe année. Elle développe des outils de sensibilisation à l'entrepreneuriat. A partir de 1997, le concours Talents permet chaque année de valoriser des parcours entrepreneuriaux exemplaires. En 2000, BGE PaRIF créé la première couveuse régionale. Ce concept, permettant de tester grandeur réelle son projet de création d’entreprise, se met en place. 15 ans plus tard, BGE PaRIF compte 17 couveuses et 4 incubateurs.</p>
+              </div>-->
+
+              <div id="donsociales">
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs" role="tablist">
+                  <li role="presentation"  class="active"><a href="#Sexes" aria-controls="Sexes" role="tab" data-toggle="tab">Sexes</a></li>
+                  <li role="presentation"><a href="#Ages" aria-controls="Ages" role="tab" data-toggle="tab">Ages</a></li>
+                  <li role="presentation"><a href="#statutSocial" aria-controls="statutSocial" role="tab" data-toggle="tab">Statuts Social</a></li>
+                  <li role="presentation"><a href="#niveauDeFormation" aria-controls="niveauDeFormation" role="tab" data-toggle="tab">Niveau de formation</a></li>
+                </ul>
+
+                <!-- Tab panes -->
+                <div class="tab-content">
+                  <div role="tabpanel" class="tab-pane active" id="Sexes">
+                    <div >
+                      <div class="col-md-12 col-sm-12">
+                        <div id="chart" class="col-md-4 col-sm-4 chart"></div>
+                        <!--<div id="chart2" class="col-md-4 col-sm-4"></div>              
+                        <div id="chart3" class="col-md-4 col-sm-4"></div>-->
+                        <div class="col-md-12 col-sm-8">
+                        <p style="margin:10px;">En 1994, la Boutique de gestion de Paris Ile-de-France met en place le pôle "Créer son Activité" à la Cité des Sciences de la Villette : plus de 4 000 visiteurs s'y rendent chauqe année. Elle développe des outils de sensibilisation à l'entrepreneuriat. A partir de 1997, le concours Talents permet chaque année de valoriser des parcours entrepreneuriaux exemplaires. En 2000, BGE PaRIF créé la première couveuse régionale. Ce concept, permettant de tester grandeur réelle son projet de création d’entreprise, se met en place. 15 ans plus tard, BGE PaRIF compte 17 couveuses et 4 incubateurs.</p>
+                        </div>
+                      </div>                      
+                    </div>
+                  </div>
+                  <div role="tabpanel" class="tab-pane" id="Ages">
+                    <div id="donsociales">
+                      <div class="col-md-12 col-sm-12">
+                        <div id="chart2" class="col-md-4 col-sm-4 chart"></div>
+                        <div class="col-md-12 col-sm-8">
+                          <p style="margin:10px;">En 1994, la Boutique de gestion de Paris Ile-de-France met en place le pôle "Créer son Activité" à la Cité des Sciences de la Villette : plus de 4 000 visiteurs s'y rendent chauqe année. Elle développe des outils de sensibilisation à l'entrepreneuriat. A partir de 1997, le concours Talents permet chaque année de valoriser des parcours entrepreneuriaux exemplaires. En 2000, BGE PaRIF créé la première couveuse régionale. Ce concept, permettant de tester grandeur réelle son projet de création d’entreprise, se met en place. 15 ans plus tard, BGE PaRIF compte 17 couveuses et 4 incubateurs.</p>
+                        </div>
+                      </div>                      
+                    </div>
+                  </div>
+                  <div role="tabpanel" class="tab-pane" id="statutSocial">
+                    <div id="donsociales">
+                      <div class="col-md-12 col-sm-12">
+                        <div id="chart3" class="col-md-4 col-sm-4 chart"></div>
+                        <div class="col-md-12 col-sm-8">
+                          <p style="margin:10px;">En 1994, la Boutique de gestion de Paris Ile-de-France met en place le pôle "Créer son Activité" à la Cité des Sciences de la Villette : plus de 4 000 visiteurs s'y rendent chauqe année. Elle développe des outils de sensibilisation à l'entrepreneuriat. A partir de 1997, le concours Talents permet chaque année de valoriser des parcours entrepreneuriaux exemplaires. En 2000, BGE PaRIF créé la première couveuse régionale. Ce concept, permettant de tester grandeur réelle son projet de création d’entreprise, se met en place. 15 ans plus tard, BGE PaRIF compte 17 couveuses et 4 incubateurs.</p>
+                        </div>
+                      </div>                     
+                    </div>
+                  </div>
+                  <div role="tabpanel" class="tab-pane" id="niveauDeFormation">
+                    <div id="donsociales">
+                      <div class="col-md-12 col-sm-12">             
+                        <div id="chart4" class="col-md-4 col-sm-4 chart"></div>
+                        <div class="col-md-12 col-sm-8">
+                          <p style="margin:10px;">En 1994, la Boutique de gestion de Paris Ile-de-France met en place le pôle "Créer son Activité" à la Cité des Sciences de la Villette : plus de 4 000 visiteurs s'y rendent chauqe année. Elle développe des outils de sensibilisation à l'entrepreneuriat. A partir de 1997, le concours Talents permet chaque année de valoriser des parcours entrepreneuriaux exemplaires. En 2000, BGE PaRIF créé la première couveuse régionale. Ce concept, permettant de tester grandeur réelle son projet de création d’entreprise, se met en place. 15 ans plus tard, BGE PaRIF compte 17 couveuses et 4 incubateurs.</p>
+                        </div>
+                      </div>                     
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+                <!--<div id="donsociales">
+                  <div class="col-md-12 col-sm-12">
+                    <div id="chart" class="col-md-4 col-sm-4"></div>
+                    <div id="chart2" class="col-md-4 col-sm-4"></div>              
+                    <div id="chart3" class="col-md-4 col-sm-4"></div>
+                  </div>
+                  <div class="col-md-4 col-sm-4">
+                    <div id="chart4"></div>
+                  </div>
+                  <div class="col-md-8 col-sm-8">
+                    <p style="margin:10px;">En 1994, la Boutique de gestion de Paris Ile-de-France met en place le pôle "Créer son Activité" à la Cité des Sciences de la Villette : plus de 4 000 visiteurs s'y rendent chauqe année. Elle développe des outils de sensibilisation à l'entrepreneuriat. A partir de 1997, le concours Talents permet chaque année de valoriser des parcours entrepreneuriaux exemplaires. En 2000, BGE PaRIF créé la première couveuse régionale. Ce concept, permettant de tester grandeur réelle son projet de création d’entreprise, se met en place. 15 ans plus tard, BGE PaRIF compte 17 couveuses et 4 incubateurs.</p>
+                  </div>
+                </div>-->           
+
+              
+            </div>
+
+            <div class="row cadre">
+              <h2 style="text-align:center;" id="SortieCouveuse">A l'issu de l'accompagnement</h2>
+              <!--<div id="SortCouveuse">
+                <div class="col-md-4 col-sm-4" id="chart5"></div>
+                <div class="col-md-4 col-sm-4" id="chart6"></div>
+                <div class="col-md-4 col-sm-4" id="chart7"></div>
+                <div>
+                  <p>En 1979, Danielle Desguées créé la première Boutique de gestion à Paris, qui deviendra BGE PaRIF en 2010. Des 1980, d'autres Boutiques de gestion voient le jour. Ces premières Boutiques de gestion signent la charte fondatrice du réseau. Dans les années 1980, les Boutiques de gestion se structurent et développent le territoire. Elles élaborent de nombreux outils à destination des créateurs d'entreprises.</p>
+                </div>
+              </div>-->
+              <div id="SortCouveuse">                
+                <ul id="myTab1" class="nav nav-tabs">
+                  <li class="active"><a href="#typeSortie" data-toggle="tab">Types de sortie</a></li>
+                  <li><a href="#typeCreation" data-toggle="tab">Types de création</a></li>
+                  <li><a href="#seteurActivite" data-toggle="tab">Secteur d'activité</a></li>
+                </ul>
+                <div id="myTabContent1" class="tab-content">
+                  <div class="tab-pane fade in active" id="typeSortie">
+                    <div id="chart5" class="col-md-12 col-sm-4 chart"></div>
+                    <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.</p>
+                  </div>
+                  <div class="tab-pane fade" id="typeCreation">
+                    <div id="chart6" class="col-md-12 col-sm-4 chart"></div>
+                    <p>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit. Keytar helvetica VHS salvia yr, vero magna velit sapiente labore stumptown. Vegan fanny pack odio cillum wes anderson 8-bit, sustainable jean shorts beard ut DIY ethical culpa terry richardson biodiesel. Art party scenester stumptown, tumblr butcher vero sint qui sapiente accusamus tattooed echo park.</p>
+                  </div>
+                  <div class="tab-pane fade" id="seteurActivite">
+                    <div id="chart7" class="col-md-12 col-sm-4 chart"></div>
+                    <!--<p>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit. Keytar helvetica VHS salvia yr, vero magna velit sapiente labore stumptown. Vegan fanny pack odio cillum wes anderson 8-bit, sustainable jean shorts beard ut DIY ethical culpa terry richardson biodiesel. Art party scenester stumptown, tumblr butcher vero sint qui sapiente accusamus tattooed echo park.</p>-->
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+      <div class="rowj">
+        <div class="coll-md-12">
+          <div class="col-md-4 avis">
+              <h2>Les retours sur l'accompagnement</h2>
+          </div>
+          <div class="testancien">            
+            <div class="col-md-8" id="text"></div>
+          </div>
+          <!--<h2 style="text-align:center; color:white;">Paroles d'anciens</h2>
+          <div class="profil">
+            <ul>
+              <li>
+                <div class="container">
+                  <div class="text">
+                  <h3>JOHN DOE</h3>
+                  <p>Sa situation</p>
+    <p>L’idée de créer Ma Poule ! est née d’un constat simple : dans nos villages, nos campagnes, aucun magazine n’est dédié aux femmes rurales que nous sommes. Ma Poule ! vient donc combler un manque. Et comme nous voulions un journal qui nous ressemble, nous le créons chez nous, dans notre village de Seine-et-Marne. Pour une fois, un magazine féminin dédié au monde rural est fabriqué dans le monde rural.
+
+    A force de frapper aux portes pour trouver un poste de journaliste, le plus souvent sans réponse, même avec mon expérience de plusieurs années et mon diplôme de 3ème cycle, j’ai fini par décider d’utiliser mes compétences pour moi-même et pour ma communauté de vie. Et donc de créer une entreprise de communication à destination des TPE et des commerces, et un magazine féminin rural et gratuit.</p>
+                  </div>
+                  <div class="imgtst"></div>
+                </div>
+              </li>
+              <li>
+                <div class="container">
+                  <div class="text">
+                  <h3>JANE DOE</h3>
+                  <p>Sa situation</p>
+    L’idée de créer Ma Poule ! est née d’un constat simple : dans nos villages, nos campagnes, aucun magazine n’est dédié aux femmes rurales que nous sommes. Ma Poule ! vient donc combler un manque. Et comme nous voulions un journal qui nous ressemble, nous le créons chez nous, dans notre village de Seine-et-Marne. Pour une fois, un magazine féminin dédié au monde rural est fabriqué dans le monde rural.
+
+    A force de frapper aux portes pour trouver un poste de journaliste, le plus souvent sans réponse, même avec mon expérience de plusieurs années et mon diplôme de 3ème cycle, j’ai fini par décider d’utiliser mes compétences pour moi-même et pour ma communauté de vie. Et donc de créer une entreprise de communication à destination des TPE et des commerces, et un magazine féminin rural et gratuit.
+                  </div>
+                  <div class="imgtst"></div>
+                </div>
+              </li>
+            </ul>
+          </div>-->
+        </div>
+      </div>
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+      <script src="d3.min.js"></script>
+      <script src="c3-0.4.11/c3.min.js"></script>
+      <script src="transition.js"></script>
+      <script src="tab.js"></script>
+      <script src="script.js"></script>
+      <script>
+          var mots= ["[...]En résumé mon passage à l’incubateur est la solution que j’attendais.",
+          "Grâce à l’accompagnement collectif, j’ai pu acquérir des bases dans les différents domaines auxquels un entrepreneur est exposé. Les formateurs sont très compétents & professionnels et à l’écoute des couvés. L’ambiance dans les groupes a toujours été très bonne et travailleur.", 
+          "[…] Les remarques constructives des conseillers m’ont permis d’aiguiller mes questionnements par rapport au projet et de le développer de manière sérieuse et plus confiante.", 
+          "Les formateurs sont tous très professionnels et fort cordiaux, on voit qu’ils maîtrisent leur sujet. Ils prennent le temps d’écouter chacun et de répondre aux questions. […]", 
+          "J’ai beaucoup apprécié ma conseillère, […]. Elle a toujours mis un point d’honneur à répondre à mes questions et à me faciliter les choses. […]", 
+          "La couveuse m’a été vraiment très utile, je suis beaucoup mieux préparé pour commencer l’activité « réellement ». Formation TOP, accompagnement TOP. De bonnes rencontres et interactions avec les couvés lors des formations. Globalement très satisfait.", 
+          "J’ai effectué de nombreuses formations qui m’ont permis de vraiment pouvoir me projeter dans le rôle d’entrepreneur et de mieux appréhender la création d’une société. […]", 
+          "La couveuse a été un moyen de tester mon activité tout en sécurité, et d’être accompagnée tout au long de mon projet. […] Le remboursement de frais a été selon moi l’un des plus gros avantages. […] et ainsi je sors de couveuse en ayant 9 000 € en attente de facturation, ce qui m’assure plusieurs mois de revenus. […]"
+          ];
+
+            var change = function(){
+            document.getElementById('text').innerHTML = mots[Math.floor(Math.random()*mots.length)];
+            }
+
+            setInterval(change, 4000);
+        </script>
+    </body>
+  </html>

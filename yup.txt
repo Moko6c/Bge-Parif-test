@@ -1,0 +1,46 @@
+<!--<!-- Nav tabs -->
+                <ul class="nav nav-tabs" role="tablist">
+                  <li role="presentation"  class="active"><a href="#typeSortie" aria-controls="typeSortie" role="tab" data-toggle="tab">Type de sortie</a></li>
+                  <li role="presentation"><a href="#typeCréation" aria-controls="typeCréation" role="tab" data-toggle="tab">Type de création</a></li>
+                  <li role="presentation"><a href="#secteurActivité" aria-controls="secteurActivité" role="tab" data-toggle="tab">Secteur d'activité</a></li>                  
+                </ul>
+
+                <!-- Tab panes -->
+                <div class="tab-content">
+                  <div role="tabpanel" class="tab-pane active" id="typeSortie">
+                    <div id="donsociales">
+                      <div class="col-md-12 col-sm-12">
+                        <div id="chart5" class="col-md-4 col-sm-4"></div>
+                        <!--<div id="chart2" class="col-md-4 col-sm-4"></div>              
+                        <div id="chart3" class="col-md-4 col-sm-4"></div>-->
+                        <div class="col-md-8 col-sm-8">
+                        <p style="margin:10px;">En 1979, Danielle Desguées créé la première Boutique de gestion à Paris, qui deviendra BGE PaRIF en 2010. Des 1980, d'autres Boutiques de gestion voient le jour. Ces premières Boutiques de gestion signent la charte fondatrice du réseau. Dans les années 1980, les Boutiques de gestion se structurent et développent le territoire. Elles élaborent de nombreux outils à destination des créateurs d'entreprises.</p>
+                      </div>
+                      </div>
+                      <div class="col-md-4 col-sm-4">
+                        <!--<div id="chart4"></div>-->
+                      </div>
+                      
+                    </div>
+                  </div>
+                  <div role="tabpanel" class="tab-pane" id="typeCréation">
+                    <div id="donsociales">
+                      <div class="col-md-12 col-sm-12">
+                        <div id="chart6" class="col-md-4 col-sm-4"></div>
+                        <div class="col-md-8 col-sm-8">
+                          <p style="margin:10px;">En 1979, Danielle Desguées créé la première Boutique de gestion à Paris, qui deviendra BGE PaRIF en 2010. Des 1980, d'autres Boutiques de gestion voient le jour. Ces premières Boutiques de gestion signent la charte fondatrice du réseau. Dans les années 1980, les Boutiques de gestion se structurent et développent le territoire. Elles élaborent de nombreux outils à destination des créateurs d'entreprises.</p>
+                        </div>
+                      </div>                      
+                    </div>
+                  </div>
+                  <div role="tabpanel" class="tab-pane" id="secteurActivité">
+                    <div id="donsociales">
+                      <div class="col-md-12 col-sm-12">
+                        <div id="chart7" class="col-md-4 col-sm-4"></div>
+                        <div class="col-md-8 col-sm-8">
+                          <p style="margin:10px;">En 1979, Danielle Desguées créé la première Boutique de gestion à Paris, qui deviendra BGE PaRIF en 2010. Des 1980, d'autres Boutiques de gestion voient le jour. Ces premières Boutiques de gestion signent la charte fondatrice du réseau. Dans les années 1980, les Boutiques de gestion se structurent et développent le territoire. Elles élaborent de nombreux outils à destination des créateurs d'entreprises.</p>
+                        </div>
+                      </div>                     
+                    </div>
+                  </div>                  
+                </div>

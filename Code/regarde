@@ -1,0 +1,797 @@
+var chart1 = c3.generate({
+    size: {
+        height: 250,
+        width: 250
+    },
+    data: {
+        url: 'data/Globale.csv',        
+        type : 'pie',
+        hide: ['-26 ans','de 26 à 30 ans','de 31 à 35 ans','de 36 à 40 ans','de 41 à 45 ans','de 46 à 50 ans','+50 ans',
+               'Salarié','Demandeur d\'emploi','Demandeur de longue durée','Titulaire RSA','Autre',
+               'IV - Niveau Bac','III - Bac +2','II - Bac +3/4','I - Bac +5','Autre',
+               'Abandon du projet','Retour à l\'emploi','Poursuite du projet','Création','Formation','Autre',
+               'Association','SAS','EURL/SARL','Entreprise individuelle',
+               'Conseil et formation','Communication, graphisme, multimédia','Internet','Informatique','Services et produits culturels','Autres services aux entreprises','Mode (Haute coututre, PAP)','Artisanat d\'art, design, decoration','Bijouterie, accessoires de mode','Beauté, relookin, bien-être','Autres services aux particuliers','Autres','Non Renseignée'],
+    },
+    color: {
+        pattern: ['#F80A00', '#ED433C', '#6D1F1C', '#6D0400', '#BA352F', '#A01E19']
+    },
+    transition: {
+        duration: 1000
+    },
+    legend: {
+        hide: ['-26 ans','de 26 à 30 ans','de 31 à 35 ans','de 36 à 40 ans','de 41 à 45 ans','de 46 à 50 ans','+50 ans',
+               'Salarié','Demandeur d\'emploi','Demandeur de longue durée','Titulaire RSA','Autre',
+               'IV - Niveau Bac','III - Bac +2','II - Bac +3/4','I - Bac +5','Autre',
+               'Abandon du projet','Retour à l\'emploi','Poursuite du projet','Création','Formation','Autre',
+               'Association','SAS','EURL/SARL','Entreprise individuelle',
+               'Conseil et formation','Communication, graphisme, multimédia','Internet','Informatique','Services et produits culturels','Autres services aux entreprises','Mode (Haute coututre, PAP)','Artisanat d\'art, design, decoration','Bijouterie, accessoires de mode','Beauté, relookin, bien-être','Autres services aux particuliers','Autres','Non Renseignée'],
+    }
+});
+
+var chart2 = c3.generate({
+    bindto:'#chart2',
+    size: {
+        height: 250,
+        width: 250
+    },
+    data: {
+        url: 'data/Globale.csv',        
+        type : 'pie',
+        hide: ['Homme','Femme',
+               'Salarié','Demandeur d\'emploi','Demandeur de longue durée','Titulaire RSA','Autre',
+               'IV - Niveau Bac','III - Bac +2','II - Bac +3/4','I - Bac +5','Autre',
+               'Abandon du projet','Retour à l\'emploi','Poursuite du projet','Création','Formation','Autre',
+               'Association','SAS','EURL/SARL','Entreprise individuelle',
+               'Conseil et formation','Communication, graphisme, multimédia','Internet','Informatique','Services et produits culturels','Autres services aux entreprises','Mode (Haute coututre, PAP)','Artisanat d\'art, design, decoration','Bijouterie, accessoires de mode','Beauté, relookin, bien-être','Autres services aux particuliers','Autres','Non Renseignée'],
+    },
+    legend: {
+        hide: ['Homme','Femme',
+               'Salarié','Demandeur d\'emploi','Demandeur de longue durée','Titulaire RSA','Autre',
+               'IV - Niveau Bac','III - Bac +2','II - Bac +3/4','I - Bac +5','Autre',
+               'Abandon du projet','Retour à l\'emploi','Poursuite du projet','Création','Formation','Autre',
+               'Association','SAS','EURL/SARL','Entreprise individuelle',
+               'Conseil et formation','Communication, graphisme, multimédia','Internet','Informatique','Services et produits culturels','Autres services aux entreprises','Mode (Haute coututre, PAP)','Artisanat d\'art, design, decoration','Bijouterie, accessoires de mode','Beauté, relookin, bien-être','Autres services aux particuliers','Autres','Non Renseignée'],
+    },
+    color: {
+        pattern: ['#EDCC3C', '#BAA02F', '#F0DC85', '#F7AA32', '#EEF732', '#D6A52B']
+    },
+    transition: {
+        duration: 1000
+    },
+    tooltip: {
+        show: true
+    }
+});
+
+var chart3 = c3.generate({
+    bindto:'#chart3',
+    size: {
+        height: 250,
+        width: 250
+    },
+    data: {
+        url: 'data/Globale.csv',        
+        type : 'pie',
+        hide: ['Homme','Femme',
+               '-26 ans','de 26 à 30 ans','de 31 à 35 ans','de 36 à 40 ans','de 41 à 45 ans','de 46 à 50 ans','+50 ans',
+               'IV - Niveau Bac','III - Bac +2','II - Bac +3/4','I - Bac +5','Autre',
+               'Abandon du projet','Retour à l\'emploi','Poursuite du projet','Création','Formation','Autre',
+               'Association','SAS','EURL/SARL','Entreprise individuelle',
+               'Conseil et formation','Communication, graphisme, multimédia','Internet','Informatique','Services et produits culturels','Autres services aux entreprises','Mode (Haute coututre, PAP)','Artisanat d\'art, design, decoration','Bijouterie, accessoires de mode','Beauté, relookin, bien-être','Autres services aux particuliers','Autres','Non Renseignée'],
+    },
+    legend: {
+        hide: ['Homme','Femme',
+               '-26 ans','de 26 à 30 ans','de 31 à 35 ans','de 36 à 40 ans','de 41 à 45 ans','de 46 à 50 ans','+50 ans',
+               'IV - Niveau Bac','III - Bac +2','II - Bac +3/4','I - Bac +5','Autre',
+               'Abandon du projet','Retour à l\'emploi','Poursuite du projet','Création','Formation','Autre',
+               'Association','SAS','EURL/SARL','Entreprise individuelle',
+               'Conseil et formation','Communication, graphisme, multimédia','Internet','Informatique','Services et produits culturels','Autres services aux entreprises','Mode (Haute coututre, PAP)','Artisanat d\'art, design, decoration','Bijouterie, accessoires de mode','Beauté, relookin, bien-être','Autres services aux particuliers','Autres','Non Renseignée'],
+    },
+    color: {
+        pattern: ['#00AFEC', '#00506C', '#48C4EF', '#21596C', '#0089B9', '#0CF7B3']
+    },
+    transition: {
+        duration: 1000
+    },
+    tooltip: {
+        show: false
+    }
+});
+
+var chart4 = c3.generate({
+    bindto:'#chart4',
+    size: {
+        height: 250,
+        width: 250
+    },
+    data: {
+        url: 'data/Globale.csv',        
+        type : 'pie',
+        hide: ['Homme','Femme',
+               '-26 ans','de 26 à 30 ans','de 31 à 35 ans','de 36 à 40 ans','de 41 à 45 ans','de 46 à 50 ans','+50 ans',
+               'Salarié','Demandeur d\'emploi','Demandeur de longue durée','Titulaire RSA','Autre',
+               'Abandon du projet','Retour à l\'emploi','Poursuite du projet','Création','Formation','Autre',
+               'Association','SAS','EURL/SARL','Entreprise individuelle',
+               'Conseil et formation','Communication, graphisme, multimédia','Internet','Informatique','Services et produits culturels','Autres services aux entreprises','Mode (Haute coututre, PAP)','Artisanat d\'art, design, decoration','Bijouterie, accessoires de mode','Beauté, relookin, bien-être','Autres services aux particuliers','Autres','Non Renseignée'],
+    },
+    legend: {
+        hide: ['Homme','Femme',
+               '-26 ans','de 26 à 30 ans','de 31 à 35 ans','de 36 à 40 ans','de 41 à 45 ans','de 46 à 50 ans','+50 ans',
+               'Salarié','Demandeur d\'emploi','Demandeur de longue durée','Titulaire RSA','Autre',
+               'Abandon du projet','Retour à l\'emploi','Poursuite du projet','Création','Formation','Autre',
+               'Association','SAS','EURL/SARL','Entreprise individuelle',
+               'Conseil et formation','Communication, graphisme, multimédia','Internet','Informatique','Services et produits culturels','Autres services aux entreprises','Mode (Haute coututre, PAP)','Artisanat d\'art, design, decoration','Bijouterie, accessoires de mode','Beauté, relookin, bien-être','Autres services aux particuliers','Autres','Non Renseignée'],
+    },
+    color: {
+        pattern: ['#7CC04B', '#2A4019', '#A6CA8C', '#35402D', '#5B8D37', '#46CD64']
+    },
+    transition: {
+        duration: 1000
+    },
+    tooltip: {
+        show: false
+    }
+});
+
+var chart5 = c3.generate({
+    bindto:'#chart5',
+    size: {
+        height: 250,
+        width: 250
+    },
+    data: {
+        url: 'data/Globale.csv',        
+        type : 'pie',
+        hide: ['Homme','Femme',
+               '-26 ans','de 26 à 30 ans','de 31 à 35 ans','de 36 à 40 ans','de 41 à 45 ans','de 46 à 50 ans','+50 ans',
+               'Salarié','Demandeur d\'emploi','Demandeur de longue durée','Titulaire RSA','Autre',
+               'IV - Niveau Bac','III - Bac +2','II - Bac +3/4','I - Bac +5','Autre',
+               'Association','SAS','EURL/SARL','Entreprise individuelle',
+               'Conseil et formation','Communication, graphisme, multimédia','Internet','Informatique','Services et produits culturels','Autres services aux entreprises','Mode (Haute coututre, PAP)','Artisanat d\'art, design, decoration','Bijouterie, accessoires de mode','Beauté, relookin, bien-être','Autres services aux particuliers','Autres','Non Renseignée'],
+    },
+    legend: {
+        hide: ['Homme','Femme',
+               '-26 ans','de 26 à 30 ans','de 31 à 35 ans','de 36 à 40 ans','de 41 à 45 ans','de 46 à 50 ans','+50 ans',
+               'Salarié','Demandeur d\'emploi','Demandeur de longue durée','Titulaire RSA','Autre',
+               'IV - Niveau Bac','III - Bac +2','II - Bac +3/4','I - Bac +5','Autre',
+               'Association','SAS','EURL/SARL','Entreprise individuelle',
+               'Conseil et formation','Communication, graphisme, multimédia','Internet','Informatique','Services et produits culturels','Autres services aux entreprises','Mode (Haute coututre, PAP)','Artisanat d\'art, design, decoration','Bijouterie, accessoires de mode','Beauté, relookin, bien-être','Autres services aux particuliers','Autres','Non Renseignée'],
+    },
+    color: {
+        pattern: ['#074d97', '#fed10f', '#00afec', '#ed433c', '#7cc04b', '#f58e31']
+    },
+    transition: {
+        duration: 1000
+    },
+    tooltip: {
+        show: false
+    }
+});
+
+var chart6 = c3.generate({
+    bindto:'#chart6',
+    size: {
+        height: 250,
+        width: 250
+    },
+    data: {
+        url: 'data/Globale.csv',        
+        type : 'pie',
+        hide: ['Homme','Femme',
+               '-26 ans','de 26 à 30 ans','de 31 à 35 ans','de 36 à 40 ans','de 41 à 45 ans','de 46 à 50 ans','+50 ans',
+               'Salarié','Demandeur d\'emploi','Demandeur de longue durée','Titulaire RSA','Autre',
+               'IV - Niveau Bac','III - Bac +2','II - Bac +3/4','I - Bac +5','Autre',
+               'Abandon du projet','Retour à l\'emploi','Poursuite du projet','Création','Formation','Autre',
+               'Conseil et formation','Communication, graphisme, multimédia','Internet','Informatique','Services et produits culturels','Autres services aux entreprises','Mode (Haute coututre, PAP)','Artisanat d\'art, design, decoration','Bijouterie, accessoires de mode','Beauté, relookin, bien-être','Autres services aux particuliers','Autres','Non Renseignée'],
+    },
+    legend: {
+        hide: ['Homme','Femme',
+               '-26 ans','de 26 à 30 ans','de 31 à 35 ans','de 36 à 40 ans','de 41 à 45 ans','de 46 à 50 ans','+50 ans',
+               'Salarié','Demandeur d\'emploi','Demandeur de longue durée','Titulaire RSA','Autre',
+               'IV - Niveau Bac','III - Bac +2','II - Bac +3/4','I - Bac +5','Autre',
+               'Abandon du projet','Retour à l\'emploi','Poursuite du projet','Création','Formation','Autre',
+               'Conseil et formation','Communication, graphisme, multimédia','Internet','Informatique','Services et produits culturels','Autres services aux entreprises','Mode (Haute coututre, PAP)','Artisanat d\'art, design, decoration','Bijouterie, accessoires de mode','Beauté, relookin, bien-être','Autres services aux particuliers','Autres','Non Renseignée'],
+    },
+    color: {
+        pattern: ['#074d97', '#fed10f', '#00afec', '#ed433c', '#7cc04b', '#f58e31']
+    },
+    transition: {
+        duration: 1000
+    },
+    tooltip: {
+        show: true
+    }
+});
+
+var chart7 = c3.generate({
+    bindto:'#chart7',
+    size: {
+        height: 250,
+        width: 250
+    },
+    data: {
+        url: 'data/Globale.csv',        
+        type : 'pie',
+        hide: ['Homme','Femme',
+               '-26 ans','de 26 à 30 ans','de 31 à 35 ans','de 36 à 40 ans','de 41 à 45 ans','de 46 à 50 ans','+50 ans',
+               'Salarié','Demandeur d\'emploi','Demandeur de longue durée','Titulaire RSA','Autre',
+               'IV - Niveau Bac','III - Bac +2','II - Bac +3/4','I - Bac +5','Autre',
+               'Abandon du projet','Retour à l\'emploi','Poursuite du projet','Création','Formation','Autre',
+               'Conseil et formation','Communication, graphisme, multimédia','Internet','Informatique','Services et produits culturels','Autres services aux entreprises','Mode (Haute coututre, PAP)','Artisanat d\'art, design, decoration','Bijouterie, accessoires de mode','Beauté, relookin, bien-être','Autres services aux particuliers','Autres','Non Renseignée'],
+    },
+    legend: {
+        hide: ['Homme','Femme',
+               '-26 ans','de 26 à 30 ans','de 31 à 35 ans','de 36 à 40 ans','de 41 à 45 ans','de 46 à 50 ans','+50 ans',
+               'Salarié','Demandeur d\'emploi','Demandeur de longue durée','Titulaire RSA','Autre',
+               'IV - Niveau Bac','III - Bac +2','II - Bac +3/4','I - Bac +5','Autre',
+               'Abandon du projet','Retour à l\'emploi','Poursuite du projet','Création','Formation','Autre',
+               'Conseil et formation','Communication, graphisme, multimédia','Internet','Informatique','Services et produits culturels','Autres services aux entreprises','Mode (Haute coututre, PAP)','Artisanat d\'art, design, decoration','Bijouterie, accessoires de mode','Beauté, relookin, bien-être','Autres services aux particuliers','Autres','Non Renseignée'],
+    },
+    color: {
+        pattern: ['#074d97', '#fed10f', '#00afec', '#ed433c', '#7cc04b', '#f58e31']
+    },
+    transition: {
+        duration: 1000
+    },
+    tooltip: {
+        show: true
+    }
+});
+
+$( document ).ready(function() {
+    $('#DonneesSociales').on('click', function (){
+        $('#donsociales').toggle();
+    });
+    $('#SortieCouveuse').on('click', function (){
+        $('#SortCouveuse').toggle();
+    });
+
+
+    $('#antenne').on('change', function(){
+        var antenneSelect = $('#antenne').val();
+        console.log(antenneSelect)
+        switch (antenneSelect) {
+            case 'paris11':               
+                chart1.load({
+                    url: 'data/Paris11.csv'
+                    //unload: chart.columns,
+                });
+                chart2.load({
+                    url: 'data/Paris11.csv'
+                    //unload: chart.columns,
+                });
+                chart3.load({
+                    url: 'data/Paris11.csv'
+                    //unload: chart.columns,
+                });
+                chart4.load({
+                    url: 'data/Paris11.csv'
+                    //unload: chart.columns,
+                });
+                chart5.load({
+                    url: 'data/Paris11.csv'
+                    //unload: chart.columns,
+                });
+                chart6.load({
+                    url: 'data/Paris11.csv'
+                    //unload: chart.columns,
+                });
+                chart7.load({
+                    url: 'data/Paris11.csv'
+                    //unload: chart.columns,
+                });
+                $('a path').removeClass();
+                $('#FR-75_1_').addClass('active');
+                //$('label').prepend($('<h2></h2>').addClass('titre-antenne').text(antenneSelect));
+                $('.titre-antenne').text(antenneSelect);
+                break;
+            case 'paris14':
+                //var data=[["Homme", 31], ["Femme", 69]];
+                chart1.load({
+                    url: 'data/Paris14.csv'
+                    //unload: chart.columns,
+                });
+                chart2.load({
+                    url: 'data/Paris14.csv'
+                    //unload: chart.columns,
+                });
+                chart3.load({
+                    url: 'data/Paris14.csv'
+                    //unload: chart.columns,
+                });
+                chart4.load({
+                    url: 'data/Paris14.csv'
+                    //unload: chart.columns,
+                });
+                chart5.load({
+                    url: 'data/Paris14.csv'
+                    //unload: chart.columns,
+                });
+                chart6.load({
+                    url: 'data/Paris14.csv'
+                    //unload: chart.columns,
+                });
+                chart7.load({
+                    url: 'data/Paris14.csv'
+                    //unload: chart.columns,
+                });
+                $('a path').removeClass();
+                $('#FR-75_1_').addClass('active');
+                $('.titre-antenne').text(antenneSelect);
+                break;
+            case 'paris18':
+                var data=[["Homme", 22],["Femme", 78]];
+                chart1.load({
+                    url: 'data/Paris18.csv'
+                    //unload: chart.columns,
+                });
+                chart2.load({
+                    url: 'data/Paris18.csv'
+                    //unload: chart.columns,
+                });
+                chart3.load({
+                    url: 'data/Paris18.csv'
+                    //unload: chart.columns,
+                });
+                chart4.load({
+                    url: 'data/Paris18.csv'
+                    //unload: chart.columns,
+                });
+                chart5.load({
+                    url: 'data/Paris18.csv'
+                    //unload: chart.columns,
+                });
+                chart6.load({
+                    url: 'data/Paris18.csv'
+                    //unload: chart.columns,
+                });
+                chart7.load({
+                    url: 'data/Paris18.csv'
+                    //unload: chart.columns,
+                });
+                $('a path').removeClass();
+                $('#FR-75_1_').addClass('active');
+                $('.titre-antenne').text(antenneSelect);
+                break;
+            case 'courtaboeuf':
+                var data=[["Homme", 33],["Femme", 67]]
+                chart1.load({
+                    url: 'data/Courtaboeuf.csv'
+                    //unload: chart.columns,
+                });
+                chart2.load({
+                    url: 'data/Courtaboeuf.csv'
+                    //unload: chart.columns,
+                });
+                chart3.load({
+                    url: 'data/Courtaboeuf.csv'
+                    //unload: chart.columns,
+                });
+                chart4.load({
+                    url: 'data/Courtaboeuf.csv'
+                    //unload: chart.columns,
+                });
+                chart5.load({
+                    url: 'data/Courtaboeuf.csv'
+                    //unload: chart.columns,
+                });
+                chart6.load({
+                    url: 'data/Courtaboeuf.csv'
+                    //unload: chart.columns,
+                });
+                chart7.load({
+                    url: 'data/Courtaboeuf.csv'
+                    //unload: chart.columns,
+                });
+                $('a path').removeClass();
+                $('#FR-91_1_').addClass('active');
+                $('.titre-antenne').text(antenneSelect);
+                break;
+            case 'evry-corbeil':
+                var data=[["Homme", 27],["Femme", 73]]
+                chart1.load({
+                    url: 'data/EvryCorbeil.csv'
+                    //unload: chart.columns,
+                });
+                chart2.load({
+                    url: 'data/EvryCorbeil.csv'
+                    //unload: chart.columns,
+                });
+                chart3.load({
+                    url: 'data/EvryCorbeil.csv'
+                    //unload: chart.columns,
+                });
+                chart4.load({
+                    url: 'data/EvryCorbeil.csv'
+                    //unload: chart.columns,
+                });
+                chart5.load({
+                    url: 'data/EvryCorbeil.csv'
+                    //unload: chart.columns,
+                });
+                chart6.load({
+                    url: 'data/EvryCorbeil.csv'
+                    //unload: chart.columns,
+                });
+                chart7.load({
+                    url: 'data/EvryCorbeil.csv'
+                    //unload: chart.columns,
+                });
+                $('a path').removeClass();
+                $('#FR-91_1_').addClass('active');
+                $('.titre-antenne').text(antenneSelect);
+                break;
+            case 'grigny':
+                var data=[["Homme", 34],["Femme", 66]]
+                chart1.load({
+                    url: 'data/Grigny.csv'
+                    //unload: chart.columns,
+                });
+                chart2.load({
+                    url: 'data/Grigny.csv'
+                    //unload: chart.columns,
+                });
+                chart3.load({
+                    url: 'data/Grigny.csv'
+                    //unload: chart.columns,
+                });
+                chart4.load({
+                    url: 'data/Grigny.csv'
+                    //unload: chart.columns,
+                });
+                chart5.load({
+                    url: 'data/Grigny.csv'
+                    //unload: chart.columns,
+                });
+                chart6.load({
+                    url: 'data/Grigny.csv'
+                    //unload: chart.columns,
+                });
+                chart7.load({
+                    url: 'data/Grigny.csv'
+                    //unload: chart.columns,
+                });
+                $('a path').removeClass();
+                $('#FR-91_1_').addClass('active');
+                $('.titre-antenne').text(antenneSelect);
+                break;
+            case 'boucleNord':
+                var data=[["Homme", 13],["Femme", 87]]
+                chart1.load({
+                    url: 'data/92nord.csv'
+                    //unload: chart.columns,
+                });
+                chart2.load({
+                    url: 'data/92nord.csv'
+                    //unload: chart.columns,
+                });
+                chart3.load({
+                    url: 'data/92nord.csv'
+                    //unload: chart.columns,
+                });
+                chart4.load({
+                    url: 'data/92nord.csv'
+                    //unload: chart.columns,
+                });
+                chart5.load({
+                    url: 'data/92nord.csv'
+                    //unload: chart.columns,
+                });
+                chart6.load({
+                    url: 'data/92nord.csv'
+                    //unload: chart.columns,
+                });
+                chart7.load({
+                    url: 'data/92nord.csv'
+                    //unload: chart.columns,
+                });
+                $('a path').removeClass();
+                $('#FR-92_1_').addClass('active');
+                $('.titre-antenne').text(antenneSelect);
+                break;
+            case 'boucleSud':
+                var data=[["Homme", 17],["Femme", 83]]
+                chart1.load({
+                    url: 'data/92sud.csv'
+                    //unload: chart.columns,
+                });
+                chart2.load({
+                    url: 'data/92sud.csv'
+                    //unload: chart.columns,
+                });
+                chart3.load({
+                    url: 'data/92sud.csv'
+                    //unload: chart.columns,
+                });
+                chart4.load({
+                    url: 'data/92sud.csv'
+                    //unload: chart.columns,
+                });
+                chart5.load({
+                    url: 'data/92sud.csv'
+                    //unload: chart.columns,
+                });
+                chart6.load({
+                    url: 'data/92sud.csv'
+                    //unload: chart.columns,
+                });
+                chart7.load({
+                    url: 'data/92sud.csv'
+                    //unload: chart.columns,
+                });
+                $('a path').removeClass();
+                $('#FR-92_1_').addClass('active');
+                $('.titre-antenne').text(antenneSelect);
+                break;
+            case 'saintDenis':
+                var data=[["Homme", 16],["Femme", 84]]
+                chart1.load({
+                    url: 'data/SaintDenis.csv'
+                    //unload: chart.columns,
+                });
+                chart2.load({
+                    url: 'data/SaintDenis.csv'
+                    //unload: chart.columns,
+                });
+                chart3.load({
+                    url: 'data/SaintDenis.csv'
+                    //unload: chart.columns,
+                });
+                chart4.load({
+                    url: 'data/SaintDenis.csv'
+                    //unload: chart.columns,
+                });
+                chart5.load({
+                    url: 'data/SaintDenis.csv'
+                    //unload: chart.columns,
+                });
+                chart6.load({
+                    url: 'data/SaintDenis.csv'
+                    //unload: chart.columns,
+                });
+                chart7.load({
+                    url: 'data/SaintDenis.csv'
+                    //unload: chart.columns,
+                });
+                $('a path').removeClass();
+                $('#FR-93_1_').addClass('active');
+                $('.titre-antenne').text(antenneSelect);
+                break;
+            case 'bagnoletMontreuilNoisyleSec':
+                var data=[["Homme", 19],["Femme", 81]]
+                chart1.load({
+                    url: 'data/BagnoletMontreuilNoisyLeGrand.csv'
+                    //unload: chart.columns,
+                });
+                chart2.load({
+                    url: 'data/BagnoletMontreuilNoisyLeGrand.csv'
+                    //unload: chart.columns,
+                });
+                chart3.load({
+                    url: 'data/BagnoletMontreuilNoisyLeGrand.csv'
+                    //unload: chart.columns,
+                });
+                chart4.load({
+                    url: 'data/BagnoletMontreuilNoisyLeGrand.csv'
+                    //unload: chart.columns,
+                });
+                chart5.load({
+                    url: 'data/BagnoletMontreuilNoisyLeGrand.csv'
+                    //unload: chart.columns,
+                });
+                chart6.load({
+                    url: 'data/BagnoletMontreuilNoisyLeGrand.csv'
+                    //unload: chart.columns,
+                });
+                chart7.load({
+                    url: 'data/BagnoletMontreuilNoisyLeGrand.csv'
+                    //unload: chart.columns,
+                });
+                $('a path').removeClass();
+                $('#FR-93_1_').addClass('active');
+                $('.titre-antenne').text(antenneSelect);
+                break;
+            case 'IDEES':
+                var data=[["Homme", 28],["Femme", 72]]
+                chart1.load({
+                    url: 'data/AntenneIDEES.csv'
+                    //unload: chart.columns,
+                });
+                chart2.load({
+                    url: 'data/AntenneIDEES.csv'
+                    //unload: chart.columns,
+                });
+                chart3.load({
+                    url: 'data/AntenneIDEES.csv'
+                    //unload: chart.columns,
+                });
+                chart4.load({
+                    url: 'data/AntenneIDEES.csv'
+                    //unload: chart.columns,
+                });
+                chart5.load({
+                    url: 'data/AntenneIDEES.csv'
+                    //unload: chart.columns,
+                });
+                chart6.load({
+                    url: 'data/AntenneIDEES.csv'
+                    //unload: chart.columns,
+                });
+                chart7.load({
+                    url: 'data/AntenneIDEES.csv'
+                    //unload: chart.columns,
+                });
+                $('a path').removeClass();
+                $('.titre-antenne').text(antenneSelect);
+                break;
+            case 'SIAE':
+                var data=[["Homme", 28],["Femme", 72]]
+                chart1.load({
+                    url: 'data/AntenneSIAE.csv'
+                    //unload: chart.columns,
+                });
+                chart2.load({
+                    url: 'data/AntenneSIAE.csv'
+                    //unload: chart.columns,
+                });
+                chart3.load({
+                    url: 'data/AntenneSIAE.csv'
+                    //unload: chart.columns,
+                });
+                chart4.load({
+                    url: 'data/AntenneSIAE.csv'
+                    //unload: chart.columns,
+                });
+                chart5.load({
+                    url: 'data/AntenneSIAE.csv'
+                    //unload: chart.columns,
+                });
+                chart6.load({
+                    url: 'data/AntenneSIAE.csv'
+                    //unload: chart.columns,
+                });
+                chart7.load({
+                    url: 'data/AntenneSIAE.csv'
+                    //unload: chart.columns,
+                });
+                $('a path').removeClass();
+                $('.titre-antenne').text(antenneSelect);
+                break;
+            case 'SAP':
+                var data=[["Homme", 28],["Femme", 72]]
+                chart1.load({
+                    url: 'data/AntenneSAP.csv'
+                    //unload: chart.columns,
+                });
+                chart2.load({
+                    url: 'data/AntenneSAP.csv'
+                    //unload: chart.columns,
+                });
+                chart3.load({
+                    url: 'data/AntenneSAP.csv'
+                    //unload: chart.columns,
+                });
+                chart4.load({
+                    url: 'data/AntenneSAP.csv'
+                    //unload: chart.columns,
+                });
+                chart5.load({
+                    url: 'data/AntenneSAP.csv'
+                    //unload: chart.columns,
+                });
+                chart6.load({
+                    url: 'data/AntenneSAP.csv'
+                    //unload: chart.columns,
+                });
+                chart7.load({
+                    url: 'data/AntenneSAP.csv'
+                    //unload: chart.columns,
+                });
+                $('a path').removeClass();
+                $('.titre-antenne').text(antenneSelect);
+                break;
+            case 'Innovation':
+                var data=[["Homme", 28],["Femme", 72]]
+                chart1.load({
+                    url: 'data/AntenneInnovation.csv'
+                    //unload: chart.columns,
+                });
+                chart2.load({
+                    url: 'data/AntenneInnovation.csv'
+                    //unload: chart.columns,
+                });
+                chart3.load({
+                    url: 'data/AntenneInnovation.csv'
+                    //unload: chart.columns,
+                });
+                chart4.load({
+                    url: 'data/AntenneInnovation.csv'
+                    //unload: chart.columns,
+                });
+                chart5.load({
+                    url: 'data/AntenneInnovation.csv'
+                    //unload: chart.columns,
+                });
+                chart6.load({
+                    url: 'data/AntenneInnovation.csv'
+                    //unload: chart.columns,
+                });
+                chart7.load({
+                    url: 'data/AntenneInnovation.csv'
+                    //unload: chart.columns,
+                });
+                $('a path').removeClass();
+                $('.titre-antenne').text(antenneSelect);
+                break;
+            case 'MDC':
+                var data=[["Homme", 28],["Femme", 72]]
+                chart1.load({
+                    url: 'data/AntenneMDC.csv'
+                    //unload: chart.columns,
+                });
+                chart2.load({
+                    url: 'data/AntenneMDC.csv'
+                    //unload: chart.columns,
+                });
+                chart3.load({
+                    url: 'data/AntenneMDC.csv'
+                    //unload: chart.columns,
+                });
+                chart4.load({
+                    url: 'data/AntenneMDC.csv'
+                    //unload: chart.columns,
+                });
+                chart5.load({
+                    url: 'data/AntenneMDC.csv'
+                    //unload: chart.columns,
+                });
+                chart6.load({
+                    url: 'data/AntenneMDC.csv'
+                    //unload: chart.columns,
+                });
+                chart7.load({
+                    url: 'data/AntenneMDC.csv'
+                    //unload: chart.columns,
+                });
+                $('a path').removeClass();
+                $('.titre-antenne').text(antenneSelect);
+                break;
+            case 'Global':
+                var data=[["Homme", 28],["Femme", 72]]
+                chart1.load({
+                    url: 'data/Globale.csv'
+                    //unload: chart.columns,
+                });
+                chart2.load({
+                    url: 'data/Globale.csv'
+                    //unload: chart.columns,
+                });
+                chart3.load({
+                    url: 'data/Globale.csv'
+                    //unload: chart.columns,
+                });
+                chart4.load({
+                    url: 'data/Globale.csv'
+                    //unload: chart.columns,
+                });
+                chart5.load({
+                    url: 'data/Globale.csv'
+                    //unload: chart.columns,
+                });
+                chart6.load({
+                    url: 'data/Globale.csv'
+                    //unload: chart.columns,
+                });
+                chart7.load({
+                    url: 'data/Globale.csv'
+                    //unload: chart.columns,
+                });
+                $('a path').removeClass();
+                $('.titre-antenne').text(antenneSelect);
+                break;
+            default:
+                console.log('choississez une antenne !');
+        }
+    });
+});

@@ -1,0 +1,225 @@
+var chart = c3.generate({
+    size: {
+        height: 250,
+        width: 250
+    },
+    data: {
+        // iris data from R
+        columns: [
+            ['+50 ans', 16],
+            ['-26 ans', 3],
+            ['de 26 à 30 ans', 18],
+            ['de 31 à 35 ans', 16],
+            ['de 36 à 40 ans', 18],
+            ['de 41 à 45 ans', 19],
+            ['de 46 à 50 ans', 10],
+        ],
+        type : 'pie',
+        hide: ['+50 ans']
+    },
+    color: {
+        pattern: ['#F80A00', '#ED433C', '#6D1F1C', '#6D0400', '#BA352F', '#A01E19']
+    },
+    transition: {
+        duration: 250
+    },
+    tooltip: {
+        show: true
+    },
+    legend: {
+      hide: true,
+      hide: '+50 ans'
+}
+});
+
+//chart.unload();
+
+var chart2 = c3.generate({
+    bindto:'#chart2',
+    size: {
+        height: 250,
+        width: 250
+    },
+    data: {
+        // iris data from R
+        columns: [
+            ['+50 ans ', 16],
+            ['-26 ans', 3],
+            ['de 26 à 30 ans', 18],
+            ['de 31 à 35 ans', 16],
+            ['de 36 à 40 ans', 18],
+            ['de 41 à 45 ans', 19],
+            ['de 46 à 50 ans', 10],
+        ],
+        type : 'pie'
+    },
+    color: {
+        pattern: ['#EDCC3C', '#BAA02F', '#F0DC85', '#F7AA32', '#EEF732', '#D6A52B']
+    },
+    transition: {
+        duration: 250
+    },
+    tooltip: {
+        show: false
+    }
+});
+
+var chart3 = c3.generate({
+    bindto:'#chart3',
+    size: {
+        height: 250,
+        width: 250
+    },
+    data: {
+        // iris data from R
+        columns: [
+            ['+50 ans ', 16],
+            ['-26 ans', 3],
+            ['de 26 à 30 ans', 18],
+            ['de 31 à 35 ans', 16],
+            ['de 36 à 40 ans', 18],
+            ['de 41 à 45 ans', 19],
+            ['de 46 à 50 ans', 10],
+        ],
+        type : 'pie'
+    },
+    color: {
+        pattern: ['#00AFEC', '#00506C', '#48C4EF', '#21596C', '#0089B9', '#0CF7B3']
+    },
+    transition: {
+        duration: 250
+    },
+    tooltip: {
+        show: false
+    }
+});
+
+var chart4 = c3.generate({
+    bindto:'#chart4',
+    size: {
+        height: 250,
+        width: 250
+    },
+    data: {
+        // iris data from R
+        columns: [
+            ['+50 ans ', 16],
+            ['-26 ans', 3],
+            ['de 26 à 30 ans', 18],
+            ['de 31 à 35 ans', 16],
+            ['de 36 à 40 ans', 18],
+            ['de 41 à 45 ans', 19],
+            ['de 46 à 50 ans', 10],
+        ],
+        type : 'pie'
+    },
+    color: {
+        pattern: ['#7CC04B', '#2A4019', '#A6CA8C', '#35402D', '#5B8D37', '#46CD64']
+    },
+    transition: {
+        duration: 250
+    },
+    tooltip: {
+        show: false
+    }
+});
+
+var chart5 = c3.generate({
+    bindto:'#chart5',
+    size: {
+        height: 250,
+        width: 250
+    },
+    data: {
+        // iris data from R
+        columns: [
+            ['+50 ans ', 16],
+            ['-26 ans', 3],
+            ['de 26 à 30 ans', 18],
+            ['de 31 à 35 ans', 16],
+            ['de 36 à 40 ans', 18],
+            ['de 41 à 45 ans', 19],
+            ['de 46 à 50 ans', 10],
+        ],
+        type : 'pie'
+    },
+    color: {
+        pattern: ['#074d97', '#fed10f', '#00afec', '#ed433c', '#7cc04b', '#f58e31']
+    },
+    transition: {
+        duration: 250
+    },
+    tooltip: {
+        show: false
+    }
+});
+
+var chart6 = c3.generate({
+    bindto:'#chart6',
+    size: {
+        height: 250,
+        width: 250
+    },
+    data: {
+        // iris data from R
+        columns: [
+            ['+50 ans ', 16],
+            ['-26 ans', 3],
+            ['de 26 à 30 ans', 18],
+            ['de 31 à 35 ans', 16],
+            ['de 36 à 40 ans', 18],
+            ['de 41 à 45 ans', 19],
+            ['de 46 à 50 ans', 10],
+        ],
+        type : 'pie'
+    },
+    color: {
+        pattern: ['#074d97', '#fed10f', '#00afec', '#ed433c', '#7cc04b', '#f58e31']
+    },
+    transition: {
+        duration: 250
+    },
+    tooltip: {
+        show: false
+    }
+});
+
+var chart7 = c3.generate({
+    bindto:'#chart7',
+    size: {
+        height: 250,
+        width: 250
+    },
+    data: {
+        // iris data from R
+        columns: [
+            ['+50 ans ', 16],
+            ['-26 ans', 3],
+            ['de 26 à 30 ans', 18],
+            ['de 31 à 35 ans', 16],
+            ['de 36 à 40 ans', 18],
+            ['de 41 à 45 ans', 19],
+            ['de 46 à 50 ans', 10],
+        ],
+        type : 'pie'
+    },
+    color: {
+        pattern: ['#074d97', '#fed10f', '#00afec', '#ed433c', '#7cc04b', '#f58e31']
+    },
+    transition: {
+        duration: 250
+    },
+    tooltip: {
+        show: false
+    }
+});
+
+
+$( document ).ready(function() {
+    $('#DonneesSociales').on('click', function (){
+        $('#donsociales').toggle();
+    });
+    $('#SortieCouveuse').on('click', function (){
+        $('#SortCouveuse').toggle();
+    });
+});
